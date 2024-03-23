@@ -1,9 +1,0 @@
-package com.example.backend.firestore;
-
-import reactor.core.publisher.Flux;
-
-import org.springframework.cloud.gcp.data.firestore.FirestoreReactiveRepository;
-
-public interface UserRepository extends FirestoreReactiveRepository<User> {
-    Flux<User> findByName(String name);
-}
